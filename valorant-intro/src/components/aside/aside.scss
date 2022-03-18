@@ -1,0 +1,92 @@
+@import "../../dist/app.scss";
+
+.aside {
+    flex: 1;
+    background: $secondary_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    &__logo {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem 2rem;
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: $font_color;
+            text-align: center;
+            margin-top: 1.5rem;
+            span {
+                color: $red_color;
+                font-size: 2.4rem;
+                font-weight: 800;
+            }
+        }
+        img {
+            width: 8rem;
+        }
+    }
+    &__menu {
+        width: 100%;
+        flex: 1;
+        li {
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+            cursor: pointer;
+            padding: 1rem 2rem;
+            transition: $transition;
+            a {
+                width: 100%;
+            }
+            &:hover {
+                background: $primary_color;
+                border-right: 2rem solid $red_color;
+                border-left: 2rem solid $red_color;
+
+                a {
+                    color: $red_color;
+                }
+                svg {
+                    fill: $red_color;
+                }
+            }
+
+            a {
+                font-size: 1.4rem;
+                color: $font_color;
+                margin-left: 0.5rem;
+                font-weight: 500;
+                transition: $transition;
+            }
+            svg {
+                width: 2rem;
+                height: 2rem;
+                fill: $font_color;
+                transition: $transition;
+            }
+        }
+    }
+    &__social {
+        width: 100%;
+        background: $primary_color;
+        border-right: 1rem solid $red_color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        svg {
+            transition: $transition;
+            fill: $font_color;
+            width: 2rem;
+            height: 2rem;
+            &:hover {
+                fill: $red_color;
+            }
+        }
+    }
+}

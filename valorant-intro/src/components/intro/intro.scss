@@ -1,0 +1,56 @@
+@import "../../dist/app.scss";
+
+.intro {
+    position: relative;
+    flex: 9;
+    background: $red_color;
+    align-items: stretch;
+    display: flex;
+    justify-content: center;
+    background: url("https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5ce6cb4e146af5db/61d898337c5435387a0c009d/Neon_1920x1080.jpg")
+        no-repeat;
+    background-size: cover;
+    background-position: right;
+    &__images {
+        display: flex;
+        height: 100%;
+        position: relative;
+        img {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            mix-blend-mode: screen;
+            opacity: 50%;
+        }
+        h1 {
+            font-size: 7rem;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: translate(-50%, -20%);
+            z-index: 1;
+            transition: 1s ease;
+        }
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        flex-wrap: wrap;
+        top: 5rem;
+        gap: 2rem;
+        z-index: 1111;
+        button {
+            width: 12rem;
+            padding: 1rem 2rem;
+            border-radius: 7rem;
+            border: 1px solid $font_color;
+            cursor: pointer;
+            font-size: 1.5rem;
+            margin-left: 1rem;
+        }
+    }
+}

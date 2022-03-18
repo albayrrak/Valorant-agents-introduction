@@ -1,0 +1,10 @@
+@import "../../dist/app.scss";
+.home {
+    display: flex;
+    background: red;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        flex: 9;
+    }
+}
